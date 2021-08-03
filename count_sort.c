@@ -62,9 +62,11 @@ void main()
 	{
 		printf("\nEnter number of elements to store in the array(enter positive integer other than 0):");
 		scanf("%d",&n);
-	}while(n<=0);   //condition for giving onlu positive value as number of elements
+	}while(n<=0);   //condition for giving only positive value as number of elements
+
     a=(int*)malloc(n*sizeof(int));  //dynamically allocating the space for input array
-	printf("\nEnter %d elements(enter values which are >=0):",n);
+	
+    printf("\nEnter %d elements(enter values which are >=0):",n);
 	for(i=0;i<n;i++)
 	{
 		scanf("%d",&a[i]);
